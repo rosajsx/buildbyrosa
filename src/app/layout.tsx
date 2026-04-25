@@ -1,0 +1,52 @@
+import type { Metadata } from "next";
+import { Space_Mono, JetBrains_Mono, Outfit } from "next/font/google";
+import "./globals.css";
+import CursorEffect from "@/components/CursorEffect";
+import Nav from "@/components/Nav";
+import { LangProvider } from "@/context/LangContext";
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+});
+
+export const metadata: Metadata = {
+  title: "Lucas Rosa — build by rosa",
+  description:
+    "Desenvolvedor front-end com foco em React e React Native. Constrói interfaces rápidas, acessíveis e com atenção ao detalhe — do mobile ao desktop.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="pt-BR"
+      className={`${spaceMono.variable} ${jetbrainsMono.variable} ${outfit.variable}`}
+    >
+      <body>
+        <LangProvider>
+          <CursorEffect />
+          <Nav />
+          {children}
+        </LangProvider>
+      </body>
+    </html>
+  );
+}

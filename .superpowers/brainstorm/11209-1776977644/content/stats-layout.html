@@ -1,0 +1,178 @@
+<style>
+  .preview-wrap {
+    font-family: "Space Mono", monospace;
+    background: #0a0a0a;
+    border: 1px solid #222;
+    border-radius: 6px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #e8e8e8;
+  }
+  .preview-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-family: "JetBrains Mono", monospace;
+  }
+  .preview-body-text {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+  }
+  /* shared stat base */
+  .stat-number {
+    font-family: "Space Mono", monospace;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #e8e8e8;
+  }
+  .stat-number span {
+    font-style: italic;
+    color: #a78bfa;
+  }
+  .stat-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.65rem;
+    color: #666;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* OPTION A — vertical divider */
+  .stats-a {
+    display: flex;
+    gap: 0;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #222;
+  }
+  .stats-a .stat-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.3rem;
+    flex: 1;
+  }
+  .stats-a .stat-item:first-child {
+    padding-right: 2rem;
+    border-right: 1px solid #222;
+    margin-right: 2rem;
+  }
+
+  /* OPTION B — compact natural width */
+  .stats-b {
+    display: flex;
+    gap: 3.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #222;
+  }
+  .stats-b .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  /* OPTION C — current (50/50) for reference */
+  .stats-c {
+    display: flex;
+    gap: 0;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #222;
+  }
+  .stats-c .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 50%;
+  }
+</style>
+
+<h2>Layout dos Stats — 2 itens</h2>
+<p class="subtitle">Escolha qual versão parece mais intencional</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Divisor vertical</h3>
+      <p>
+        Linha separando os dois — deixa explícito que são um par. Ocupam o
+        espaço todo mas com separação clara.
+      </p>
+      <div class="preview-wrap">
+        <div class="preview-label">Sobre</div>
+        <div class="preview-body-text">
+          Texto sobre a experiência e abordagem de trabalho vai aqui...
+        </div>
+        <div class="stats-a">
+          <div class="stat-item">
+            <span class="stat-number">5<span>+</span></span>
+            <span class="stat-label">anos de exp.</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">12<span>+</span></span>
+            <span class="stat-label">projetos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Compacto à esquerda</h3>
+      <p>
+        Sem width fixo — stats ficam próximos, espaço em branco no restante.
+        Mais minimalista.
+      </p>
+      <div class="preview-wrap">
+        <div class="preview-label">Sobre</div>
+        <div class="preview-body-text">
+          Texto sobre a experiência e abordagem de trabalho vai aqui...
+        </div>
+        <div class="stats-b">
+          <div class="stat-item">
+            <span class="stat-number">5<span>+</span></span>
+            <span class="stat-label">anos de exp.</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">12<span>+</span></span>
+            <span class="stat-label">projetos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Atual (50/50)</h3>
+      <p>Estado atual sem mudança. Referência para comparar.</p>
+      <div class="preview-wrap">
+        <div class="preview-label">Sobre</div>
+        <div class="preview-body-text">
+          Texto sobre a experiência e abordagem de trabalho vai aqui...
+        </div>
+        <div class="stats-c">
+          <div class="stat-item">
+            <span class="stat-number">5<span>+</span></span>
+            <span class="stat-label">anos de exp.</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">12<span>+</span></span>
+            <span class="stat-label">projetos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "WebFetch(domain:anthropic.com)",
+      "Bash(gunzip -c \"/Users/rosa/.claude/projects/-Users-rosa-dev-buildbyrosa/be5961f4-555b-4fde-b74b-2eddca391bce/tool-results/webfetch-1776895886444-skh4vj.bin\")",
+      "Read(//private/tmp/**)",
+      "Bash(mkdir -p portfolio-design)",
+      "Bash(tar -x -C portfolio-design)",
+      "Bash(npm run *)",
+      "Bash(mkdir -p portfolio-design2)",
+      "Bash(gunzip -c \"/Users/rosa/.claude/projects/-Users-rosa-dev-buildbyrosa/be5961f4-555b-4fde-b74b-2eddca391bce/tool-results/webfetch-1776899824902-du97q0.bin\")",
+      "Bash(tar -x -C portfolio-design2)",
+      "Bash(gunzip -c \"/Users/rosa/.claude/projects/-Users-rosa-dev-buildbyrosa/be5961f4-555b-4fde-b74b-2eddca391bce/tool-results/webfetch-1776900478915-kra6vp.bin\")",
+      "Bash(tar -x -C /tmp/design-new)",
+      "Bash(bash *)",
+      "Bash(mv \"Captura de Tela 2026-04-25 às 16.20.48.png\" cover.png)",
+      "Bash(mv \"screencapture-liriashop-br-2026-04-25-16_19_07.png\" screenshot-1.png)",
+      "Bash(mv \"Captura de Tela 2026-04-25 às 16.21.03.png\" screenshot-2.png)",
+      "Bash(mv \"Captura de Tela 2026-04-25 às 16.21.14.png\" screenshot-3.png)",
+      "Bash(mv \"Captura de Tela 2026-04-25 às 16.21.26.png\" screenshot-4.png)",
+      "Bash(grep -n \"built-by-rosa\\\\|buildbyrosa\\\\|BuildByRosa\\\\|build by rosa\\\\|Build by Rosa\\\\|Build By Rosa\" /Users/rosa/dev/buildbyrosa/src/app/projects/[slug]/page.tsx /Users/rosa/dev/buildbyrosa/src/app/layout.tsx /Users/rosa/dev/buildbyrosa/src/components/Contact.tsx /Users/rosa/dev/buildbyrosa/src/components/Marquee.tsx /Users/rosa/dev/buildbyrosa/src/components/Footer.tsx /Users/rosa/dev/buildbyrosa/src/lib/projects.ts)"
+    ]
+  }
+}

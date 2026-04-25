@@ -1,0 +1,69 @@
+<h2>Como ficam os dois stats?</h2>
+<p class="subtitle">Três abordagens de layout — mesma informação, identidades visuais diferentes</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#0a0a0a;padding:2rem;font-family:'Space Mono',monospace;">
+        <div style="display:flex;border-top:1px solid #333;padding-top:1.5rem;gap:0;">
+          <div style="width:50%;border-right:1px solid #333;padding-right:2rem;">
+            <div style="font-size:3rem;font-weight:400;color:#e8e8e8;line-height:1;">5<em style="color:#7c6af7;font-style:italic;">+</em></div>
+            <div style="font-size:0.6rem;color:#666;letter-spacing:0.12em;text-transform:uppercase;margin-top:0.4rem;">anos de exp.</div>
+          </div>
+          <div style="width:50%;padding-left:2rem;">
+            <div style="font-size:3rem;font-weight:400;color:#e8e8e8;line-height:1;">5<em style="color:#7c6af7;font-style:italic;">+</em></div>
+            <div style="font-size:0.6rem;color:#666;letter-spacing:0.12em;text-transform:uppercase;margin-top:0.4rem;">projetos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Divisor vertical</h3>
+      <p>Uma linha separa os dois stats. Limpo, simétrico, mantém a estrutura atual mas com mais respiro entre eles.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#0a0a0a;padding:2rem;font-family:'Space Mono',monospace;">
+        <div style="display:flex;border-top:1px solid #333;padding-top:1.5rem;gap:0;align-items:flex-end;">
+          <div style="width:50%;">
+            <div style="font-size:0.55rem;color:#7c6af7;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem;">anos de exp.</div>
+            <div style="font-size:4.5rem;font-weight:400;color:#e8e8e8;line-height:0.9;">5<em style="color:#7c6af7;font-style:italic;">+</em></div>
+          </div>
+          <div style="width:50%;text-align:right;">
+            <div style="font-size:0.55rem;color:#7c6af7;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem;">projetos</div>
+            <div style="font-size:4.5rem;font-weight:400;color:#e8e8e8;line-height:0.9;">5<em style="color:#7c6af7;font-style:italic;">+</em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Números grandes, label em cima</h3>
+      <p>Label sobe para cima do número, números ficam bem maiores. Um alinhado à esquerda, o outro à direita — cria tensão visual e preenchimento de espaço.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#0a0a0a;padding:2rem;font-family:'Space Mono',monospace;">
+        <div style="display:flex;border-top:1px solid #333;padding-top:1.5rem;gap:1px;">
+          <div style="width:50%;background:#111;padding:1.2rem 1.4rem;">
+            <div style="font-size:0.55rem;color:#555;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.6rem;">[ anos de exp. ]</div>
+            <div style="font-size:2.8rem;font-weight:400;color:#e8e8e8;line-height:1;">5<em style="color:#7c6af7;font-style:italic;">+</em></div>
+          </div>
+          <div style="width:50%;background:#111;padding:1.2rem 1.4rem;">
+            <div style="font-size:0.55rem;color:#555;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.6rem;">[ projetos ]</div>
+            <div style="font-size:2.8rem;font-weight:400;color:#e8e8e8;line-height:1;">5<em style="color:#7c6af7;font-style:italic;">+</em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Blocos com fundo</h3>
+      <p>Cada stat vira um bloco com background levemente diferente e label estilizada com colchetes. Tom mais técnico/terminal.</p>
+    </div>
+  </div>
+
+</div>
