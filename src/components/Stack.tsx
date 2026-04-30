@@ -2,101 +2,101 @@ import ScrollReveal from './ScrollReveal'
 import T from './T'
 import { TranslationKey } from '@/lib/translations'
 
-const categories: { labelKey: TranslationKey | null; staticLabel?: string; items: { name: string; sub: string }[] }[] = [
+const categories: { labelKey: TranslationKey | null; staticLabel?: string; items: { name: string }[] }[] = [
   {
     labelKey: 'stack_languages',
     items: [
-      { name: 'TypeScript', sub: 'principal' },
-      { name: 'JavaScript', sub: 'ES2022+' },
-      { name: 'Python', sub: '' },
+      { name: 'TypeScript' },
+      { name: 'JavaScript' },
+      { name: 'Python' },
     ],
   },
   {
     labelKey: 'stack_frontend',
     items: [
-      { name: 'React', sub: 'v18+' },
-      { name: 'Next.js', sub: '' },
-      { name: 'CSS / Tailwind', sub: '' },
-      { name: 'Material UI', sub: '' },
-      { name: 'Styled Components', sub: '' },
+      { name: 'React' },
+      { name: 'Next.js' },
+      { name: 'CSS / Tailwind' },
+      { name: 'Material UI' },
+      { name: 'Styled Components' },
     ],
   },
   {
     labelKey: null,
     staticLabel: 'mobile',
     items: [
-      { name: 'React Native', sub: '' },
-      { name: 'Expo', sub: 'SDK 50+' },
+      { name: 'React Native' },
+      { name: 'Expo' },
     ],
   },
   {
     labelKey: 'stack_backend',
     items: [
-      { name: 'Node.js', sub: '' },
-      { name: 'NestJS', sub: '' },
-      { name: '.NET', sub: '' },
-      { name: 'Express', sub: '' },
-      { name: 'Apollo', sub: 'Client/Server' },
+      { name: 'Node.js' },
+      { name: 'NestJS' },
+      { name: '.NET' },
+      { name: 'Express' },
+      { name: 'Apollo' },
     ],
   },
   {
     labelKey: null,
     staticLabel: 'tooling',
     items: [
-      { name: 'Git / GitHub', sub: '' },
-      { name: 'Azure DevOps', sub: '' },
-      { name: 'Storybook', sub: '' },
-      { name: 'Vite / Webpack', sub: '' },
-      { name: 'Jest / Vitest', sub: '' },
-      { name: 'Testing Library', sub: '' },
-      { name: 'Cypress', sub: '' },
+      { name: 'Git / GitHub' },
+      { name: 'Azure DevOps' },
+      { name: 'Storybook' },
+      { name: 'Vite / Webpack' },
+      { name: 'Jest / Vitest' },
+      { name: 'Testing Library' },
+      { name: 'Cypress' },
     ],
   },
   {
     labelKey: null,
     staticLabel: 'workflow',
     items: [
-      { name: 'Figma', sub: '' },
-      { name: 'Scrum / Kanban', sub: '' },
-      { name: 'CI/CD', sub: '' },
+      { name: 'Figma' },
+      { name: 'Scrum / Kanban' },
+      { name: 'CI/CD' },
     ],
   },
   {
     labelKey: 'stack_database',
     items: [
-      { name: 'SQL / PostgreSQL', sub: '' },
-      { name: 'Firebase', sub: '' },
-      { name: 'GraphQL', sub: '' },
+      { name: 'SQL / PostgreSQL' },
+      { name: 'Firebase' },
+      { name: 'GraphQL' },
     ],
   },
   {
     labelKey: null,
     staticLabel: 'cloud & infra',
     items: [
-      { name: 'AWS', sub: '' },
-      { name: 'S3', sub: '' },
-      { name: 'Sentry', sub: '' },
-      { name: 'Dynatrace', sub: '' },
-      { name: 'Elastic', sub: '' },
-      { name: 'CloudWatch', sub: '' },
+      { name: 'AWS' },
+      { name: 'S3' },
+      { name: 'Sentry' },
+      { name: 'Dynatrace' },
+      { name: 'Elastic' },
+      { name: 'CloudWatch' },
     ],
   },
   {
     labelKey: 'stack_publish',
     items: [
-      { name: 'Apple App Store', sub: '' },
-      { name: 'Google Play Store', sub: '' },
-      { name: 'EAS Build', sub: '' },
+      { name: 'Apple App Store' },
+      { name: 'Google Play Store' },
+      { name: 'EAS Build' },
     ],
   },
   {
     labelKey: 'stack_ai',
     items: [
-      { name: 'Claude API', sub: '' },
-      { name: 'OpenAI / ChatGPT', sub: '' },
-      { name: 'N8N', sub: '' },
-      { name: 'Evolution API', sub: '' },
-      { name: 'WhatsApp Bot', sub: '' },
+      { name: 'Claude API' },
+      { name: 'OpenAI / ChatGPT' },
+      { name: 'N8N' },
+      { name: 'Evolution API' },
+      { name: 'WhatsApp Bot' },
     ],
   },
 ]
@@ -118,7 +118,6 @@ export default function Stack() {
                     <div key={item.name} className="stack-item">
                       <span className="stack-dot" />
                       {item.name}
-                      {item.sub && <span className="stack-item-sub">{item.sub}</span>}
                     </div>
                   ))}
                 </div>
