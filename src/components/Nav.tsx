@@ -5,6 +5,38 @@ import { usePathname } from 'next/navigation'
 import LangToggle from './LangToggle'
 import T from './T'
 
+type Theme = 'system' | 'light' | 'dark'
+const CYCLE: Theme[] = ['system', 'light', 'dark']
+const ICONS: Record<Theme, string> = { system: '⊙', light: '☀︎', dark: '☽' }
+
+function ThemeToggle() {
+  const [theme, setTheme] = useState<Theme>('system')
+
+  useEffect(() => {
+    const stored = localStorage.getItem('theme') as Theme | null
+    if (stored === 'light' || stored === 'dark') setTheme(stored)
+    else setTheme('system')
+  }, [])
+
+  const apply = (t: Theme) => {
+    const html = document.documentElement
+    html.classList.remove('light', 'dark')
+    if (t === 'light') html.classList.add('light')
+    else if (t === 'dark') html.classList.add('dark')
+    if (t === 'system') localStorage.removeItem('theme')
+    else localStorage.setItem('theme', t)
+    setTheme(t)
+  }
+
+  const cycle = () => apply(CYCLE[(CYCLE.indexOf(theme) + 1) % CYCLE.length])
+
+  return (
+    <button className="lang-toggle" onClick={cycle} title={`Theme: ${theme}`}>
+      {ICONS[theme]}
+    </button>
+  )
+}
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -24,6 +56,7 @@ export default function Nav() {
       <nav className="scrolled">
         <a href="/" className="nav-logo">~/build-by-rosa</a>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <ThemeToggle />
           <LangToggle />
           <a href="/" className="nav-back"><T k="nav_back" /></a>
         </div>
@@ -51,6 +84,7 @@ export default function Nav() {
           <li><a href="#stack">stack</a></li>
         </ul>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <ThemeToggle />
           <LangToggle />
           <a href="#contact" className="nav-cta"><T k="nav_contact" /></a>
         </div>

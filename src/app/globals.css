@@ -14,6 +14,40 @@
   --accent-dim: oklch(68% 0.1 145);
 }
 
+/* ── LIGHT THEME (explicit) ────────────────────── */
+html.light {
+  --bg:         oklch(96% 0.008 255);
+  --bg2:        oklch(93% 0.010 255);
+  --bg3:        oklch(90% 0.010 255);
+  --surface:    oklch(91% 0.012 255);
+  --border:     oklch(80% 0.016 255);
+  --text:       oklch(22% 0.025 255);
+  --muted:      oklch(46% 0.020 255);
+  --faint:      oklch(64% 0.016 255);
+  --accent:     oklch(50% 0.18 145);
+  --accent-dim: oklch(50% 0.10 145);
+}
+html.light .btn-primary   { color: oklch(97% 0.008 255); }
+html.light .nav-cta:hover { color: oklch(97% 0.008 255); }
+
+/* ── SYSTEM LIGHT (no explicit class) ──────────── */
+@media (prefers-color-scheme: light) {
+  html:not(.dark):not(.light) {
+    --bg:         oklch(96% 0.008 255);
+    --bg2:        oklch(93% 0.010 255);
+    --bg3:        oklch(90% 0.010 255);
+    --surface:    oklch(91% 0.012 255);
+    --border:     oklch(80% 0.016 255);
+    --text:       oklch(22% 0.025 255);
+    --muted:      oklch(46% 0.020 255);
+    --faint:      oklch(64% 0.016 255);
+    --accent:     oklch(50% 0.18 145);
+    --accent-dim: oklch(50% 0.10 145);
+  }
+  html:not(.dark):not(.light) .btn-primary   { color: oklch(97% 0.008 255); }
+  html:not(.dark):not(.light) .nav-cta:hover { color: oklch(97% 0.008 255); }
+}
+
 @theme inline {
   --font-sans: var(--font-outfit);
   --font-mono: var(--font-jetbrains);

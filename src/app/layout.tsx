@@ -41,7 +41,11 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={`${spaceMono.variable} ${jetbrainsMono.variable} ${outfit.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('theme');if(t==='light')document.documentElement.classList.add('light');else if(t==='dark')document.documentElement.classList.add('dark');})();` }} />
+      </head>
       <body>
         <LangProvider>
           <CursorEffect />
