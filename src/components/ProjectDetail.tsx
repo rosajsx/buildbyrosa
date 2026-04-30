@@ -125,13 +125,15 @@ export default function ProjectDetail({ project }: { project: Project }) {
       </div>
 
       {/* Next Project */}
-      <a href={`/projects/${project.next.slug}`} className="next-project">
-        <div>
-          <div className="next-label"><T k="proj_next_label" /></div>
-          <div className="next-name">{project.next.name}</div>
-        </div>
-        <span className="next-arrow">→</span>
-      </a>
+      {project.next && (
+        <a href={`/projects/${project.next.slug}`} className="next-project">
+          <div>
+            <div className="next-label"><T k="proj_next_label" /></div>
+            <div className="next-name">{project.next.name}</div>
+          </div>
+          <span className="next-arrow">→</span>
+        </a>
+      )}
 
       <Footer />
     </>

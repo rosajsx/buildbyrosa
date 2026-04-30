@@ -15,7 +15,7 @@ export interface Project {
   body: LA
   stats: { label: L; value: string }[]
   live: string
-  next: { slug: string; name: string }
+  next?: { slug: string; name: string }
   cover?: string
   images?: string[]
 }

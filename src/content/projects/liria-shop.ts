@@ -35,7 +35,6 @@ export const liriaShop: Project = {
     { label: { pt: 'plataforma', en: 'platform' }, value: 'Tray' },
   ],
   live: 'https://www.liriashop.com.br/',
-  next: { slug: 'fintrack', name: 'Fintrack' },
   cover: '/projects/liria-shop/cover.png',
   images: [
     '/projects/liria-shop/screenshot-1.png',
