@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Space_Mono, JetBrains_Mono, Outfit } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import CursorEffect from "@/components/CursorEffect";
 import Nav from "@/components/Nav";
 import { LangProvider } from "@/context/LangContext";
@@ -45,6 +47,8 @@ export default function RootLayout({
           <CursorEffect />
           <Nav />
           {children}
+          <Analytics />
+          <SpeedInsights />
         </LangProvider>
       </body>
     </html>
