@@ -23,8 +23,7 @@ export const translations = {
       "Sou Lucas Rosa, desenvolvedor fullstack especializado em Mobile & Web. Trabalho na interseção entre design e engenharia, construindo produtos digitais que funcionam bem e fazem sentido pra quem usa.",
     about_p2:
       "Sou entusiasta de IA e acompanho de perto como ela está mudando a forma de construir software. Isso se reflete no que entrego: interfaces acessíveis, bem pensadas e integradas com tecnologias modernas.",
-    about_p3:
-      "Além disso, atuo no back-end com Node.js, desenvolvendo e consumindo APIs para entregar produtos completos de ponta a ponta.",
+    about_p3: "",
     stat_years: "anos de exp.",
     stat_projects: "projetos",
 
@@ -91,8 +90,7 @@ export const translations = {
       "I'm Lucas Rosa, a fullstack developer specialized in Mobile & Web. I work at the intersection of design and engineering, building digital products that work well and make sense for the people who use them.",
     about_p2:
       "I'm an AI enthusiast and closely follow how it's changing the way software is built. This reflects in what I deliver: accessible, well-crafted interfaces integrated with modern technologies.",
-    about_p3:
-      "I also work on the back-end with Node.js, developing and consuming APIs to deliver complete products from end to end.",
+    about_p3: "",
     stat_years: "yrs experience",
     stat_projects: "projects",
 

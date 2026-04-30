@@ -28,9 +28,6 @@ export default function About() {
             <p>
               <T k="about_p2" />
             </p>
-            <p>
-              <T k="about_p3" />
-            </p>
             <div className="about-stats">
               <div className="stat-item">
                 <span className="stat-number">
