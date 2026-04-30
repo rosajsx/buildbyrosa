@@ -661,7 +661,7 @@ section {
 .stack-category:nth-child(3n) {
   border-right: none;
 }
-.stack-category:nth-last-child(-n + 3) {
+.stack-category:last-child {
   border-bottom: none;
 }
 .stack-cat-label {
@@ -1267,9 +1267,6 @@ footer {
   }
   .stack-category {
     border-right: none;
-  }
-  .stack-category:nth-last-child(-n + 3) {
-    border-bottom: 1px solid var(--border);
   }
   .stack-category:last-child {
     border-bottom: none;
