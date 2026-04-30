@@ -34,19 +34,19 @@ export const translations = {
     exp1_role: "Software Engineer",
     exp1_company: "Bankly · Banking as a Service · Remoto",
     exp1_desc:
-      "Atuo como Software Engineer em uma plataforma de Banking as a Service de grande escala, desenvolvendo soluções web e mobile para o setor financeiro. Liderei o refactor completo de um aplicativo legado para a versão mais recente do React Native, entregando melhorias significativas de performance, segurança e escalabilidade. Fui responsável pelo desenvolvimento de serviços BFF com GraphQL, NestJS e Node.js, integração de Google Pay via módulos nativos e construção de pipelines de CI/CD no Azure DevOps. Implementei Firebase Analytics e integrei o Sentry para monitoramento em produção, reduzindo bugs críticos e aumentando a confiabilidade da plataforma. Contribuo ativamente em decisões de arquitetura técnica, UX e modernização de código legado — em squads multidisciplinares com Scrum/Kanban.",
+      "Modernizei um aplicativo financeiro usado em larga escala — liderando a migração completa para React Native moderno, com ganhos reais de performance, segurança e confiabilidade. Integrei Google Pay, reduzi bugs críticos em produção e contribuí ativamente em decisões de arquitetura e UX dentro de squads multidisciplinares. Stack: React Native, GraphQL, NestJS, Node.js, Firebase, Sentry, Azure DevOps.",
     exp2_role: "Frontend Developer Pleno",
     exp2_company: "BRQ Digital Solutions · São Paulo, SP",
     exp2_desc:
-      "Atuei como desenvolvedor frontend pleno em projetos de grande porte para Grupo Boticário e Grupo Pão de Açúcar (GPA). No projeto Verbas B2B do Boticário, desenvolvi novas features, realizei refatorações e contribuí com tarefas de UI/UX. No projeto Fulfillment do GPA, trabalhei próximo ao Tech Lead em decisões arquiteturais e de implementação. Stack: ReactJS, TypeScript, Material UI, Cypress, Testing Library. Pipelines via Azure DevOps com metodologia Scrum.",
+      "Desenvolvi features e melhorias de interface para grandes marcas brasileiras — Grupo Boticário e Grupo Pão de Açúcar. Trabalhei próximo ao Tech Lead em decisões de arquitetura e contribuí com UI/UX em produtos B2B de alto tráfego. Stack: ReactJS, TypeScript, Material UI, Cypress.",
     exp3_role: "Desenvolvedor Jr. / Trainee",
     exp3_company: "Solutis Tecnologias · Salvador, BA",
     exp3_desc:
-      "Iniciei minha trajetória profissional como Coder Trainee, evoluindo para Junior Developer em menos de um ano. Desenvolvi aplicações web com ReactJS e chatbots com Rasa e Python, trabalhando com Scrum. Assumi responsabilidades progressivas no projeto de Chatbots para a SEC (Secretaria da Educação do Estado), consolidando boas práticas de engenharia de software desde o início da carreira.",
+      "Cresci de trainee a desenvolvedor júnior em menos de um ano. Entreguei chatbots para a Secretaria da Educação do Estado da Bahia e aplicações web — assumindo responsabilidades progressivas e consolidando boas práticas desde o início da carreira. Stack: ReactJS, Python, Rasa.",
     exp4_role: "Front End Developer · Bolsista",
     exp4_company: "IFBA · Salvador, BA",
     exp4_desc:
-      "Desenvolvi um sistema web para cadastro online de demandas e ofertas de soluções para problemas tecnológicos da instituição. Fui responsável por toda a construção do frontend com ReactJS, integrando autenticação via Firebase e JWT e utilizando Context API para gerenciamento de estado. O projeto foi entregue em produção e é acessível publicamente — minha primeira experiência desenvolvendo um produto real com impacto direto no ambiente acadêmico.",
+      "Entreguei do zero um produto real em produção: sistema web que conecta demandas tecnológicas da instituição a soluções. Responsável por todo o frontend — da arquitetura à publicação. Minha primeira experiência com impacto direto num ambiente real. Stack: ReactJS, Firebase, JWT.",
 
     stack_languages: "linguagens",
     stack_frontend: "front-end web",
@@ -102,19 +102,19 @@ export const translations = {
     exp1_role: "Software Engineer",
     exp1_company: "Bankly · Banking as a Service · Remote",
     exp1_desc:
-      "Software Engineer on a large-scale Banking as a Service platform, building web and mobile solutions for the financial sector. Led the full refactor of a legacy app to the latest React Native version, delivering significant performance, security, and scalability improvements. Built BFF services with GraphQL, NestJS, and Node.js, integrated Google Pay via native modules, and set up CI/CD pipelines on Azure DevOps. Implemented Firebase Analytics and Sentry for production monitoring, reducing critical bugs and increasing platform reliability. Actively contribute to technical architecture decisions, UX, and legacy code modernization — in multidisciplinary squads with Scrum/Kanban.",
+      "Modernized a large-scale financial app — leading a full migration to modern React Native with real gains in performance, security, and reliability. Integrated Google Pay, reduced critical production bugs, and actively contributed to architecture and UX decisions within multidisciplinary squads. Stack: React Native, GraphQL, NestJS, Node.js, Firebase, Sentry, Azure DevOps.",
     exp2_role: "Mid-level Frontend Developer",
     exp2_company: "BRQ Digital Solutions · São Paulo, Brazil",
     exp2_desc:
-      "Mid-level frontend developer on large-scale projects for Grupo Boticário and Grupo Pão de Açúcar (GPA). On Boticário's B2B Verbas project, built new features, refactored existing code, and contributed to UI/UX improvements. On GPA's Fulfillment project, worked closely with the Tech Lead on architectural and implementation decisions. Stack: ReactJS, TypeScript, Material UI, Cypress, Testing Library. Azure DevOps pipelines with Scrum methodology.",
+      "Built features and UI improvements for major Brazilian brands — Grupo Boticário and Grupo Pão de Açúcar. Worked closely with the Tech Lead on architecture decisions and contributed to UI/UX on high-traffic B2B products. Stack: ReactJS, TypeScript, Material UI, Cypress.",
     exp3_role: "Junior / Trainee Developer",
     exp3_company: "Solutis Tecnologias · Salvador, Brazil",
     exp3_desc:
-      "Started as a Coder Trainee and grew into a Junior Developer in under a year. Built web apps with ReactJS and chatbots using Rasa and Python, working in Scrum. Took on growing responsibilities on a chatbot project for the SEC (State Department of Education), building solid software engineering foundations from early in my career.",
+      "Grew from trainee to junior developer in under a year. Shipped chatbots for the State Department of Education of Bahia and web apps — taking on growing responsibilities and building strong engineering fundamentals early on. Stack: ReactJS, Python, Rasa.",
     exp4_role: "Front End Developer · Scholar",
     exp4_company: "IFBA · Salvador, Brazil",
     exp4_desc:
-      "Built a web system for online registration of tech problem demands and solutions at the institution. Owned the full frontend with ReactJS, integrating Firebase and JWT authentication and using Context API for state management. Shipped to production and publicly accessible — my first experience delivering a real product with direct impact on the academic environment.",
+      "Delivered a real product from scratch: a web system connecting the institution's tech demands to solutions, shipped to production. Owned the entire frontend — from architecture to deployment. My first experience with direct real-world impact. Stack: ReactJS, Firebase, JWT.",
 
     stack_languages: "languages",
     stack_frontend: "front-end web",
